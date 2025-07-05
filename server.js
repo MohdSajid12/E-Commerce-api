@@ -17,6 +17,8 @@ app.get("/" ,(req,res)=>{
     res.json({message : "this is home route working"});
 })
 
+console.log('hello how are you')
+
 app.use("/api/user" ,userRouter);    //user Routes
 app.use("/api/product" , productRouter)   //product routes
 app.use("/api/cart" , cartRouter)   //cart routes
